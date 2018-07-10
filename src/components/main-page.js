@@ -11,7 +11,7 @@ class MainPage extends React.Component {
   render() {
     // find a way to redirect to registration on logout
     console.log(this.props.authToken);
-
+    
 
     return (
       <div>
