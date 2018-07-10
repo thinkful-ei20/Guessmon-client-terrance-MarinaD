@@ -1,17 +1,24 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {fetchProtectedData} from '../actions/protected-data';
-import {postAnswer} from '../actions/questions';
+import {postAnswer, fetchQuestion} from '../actions/questions';
 
 class MainPage extends React.Component {
-  componentDidMount() {
-    this.props.dispatch(fetchProtectedData());
-  }
+    
 
   render() {
     // find a way to redirect to registration on logout
-    console.log(this.props.authToken);
-    
+    if (this.props.loggedIn){
+      this.props.dispatch(fetchQuestion());
+      this.props.dispatch(postAnswer({
+        'silhouette': 'https://vignette.wikia.nocookie.net/joke-battles/images/0/0d/Pokemon-Pikachu-Silhouette-Stencil-thumb.jpg/revision/latest?cb=20180210155820',
+        'filledIn': 'https://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png',
+        'answer': 'pikachu',
+        'correct': 0,
+        'total': 0,
+        'm': 1
+      }, 'pikachu'));
+    }
 
     return (
       <main>
