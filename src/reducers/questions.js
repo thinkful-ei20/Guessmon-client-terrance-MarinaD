@@ -1,8 +1,8 @@
-import { REQUEST_ANSWER, ANSWER_SUCCESS, ANSWER_ERROR, QUESTION_SUCCESS } from '../actions/questions';
+import { REQUEST_ANSWER, ANSWER_SUCCESS, ANSWER_ERROR, QUESTION_SUCCESS, RESET_RESULT } from '../actions/questions';
 
 const initialState = {
   currentQuestion : {},
-  result: {},
+  result: null,
   loading: false,
   error: null
 };
@@ -36,6 +36,13 @@ export default function questionReducer(state = initialState, action){
       ...state,
       loading: false,
       error: action.error
+    };
+  }
+
+  if (action.type === RESET_RESULT){
+    return {
+      ...state,
+      result: null
     };
   }
   return state;
