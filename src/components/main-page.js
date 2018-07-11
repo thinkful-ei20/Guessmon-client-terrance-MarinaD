@@ -9,7 +9,7 @@ class MainPage extends React.Component {
 
   submitForm(e){
     e.preventDefault();
-    console.log(document.getElementById("user_guess").value);
+    const answer = (document.getElementById('user_guess').value);
   }
 
   render() {
@@ -17,23 +17,20 @@ class MainPage extends React.Component {
     if (!this.props.loggedIn){
       return <div>Loading</div>;
     }
-    else {
-      
+    
+    if (this.props.error){
+      return <div>{this.props.error}</div>;
     }
-   
+
+    if (this.props.question.answer){
+      return <QuestionCard />;
+    }
+
     return (
       <main>
-        <section className="main-section">
-          <div className="card">
-            <button onClick={() => this.props.dispatch(fetchQuestion())}>Get question</button>
-            <img className="pokemon-img" src={'https://vignette.wikia.nocookie.net/pokemon/images/6/6b/175Togepi.png/revision/latest/scale-to-width-down/200?cb=20140329013336'} alt="The Pokemon Togepi"/>
-            <p>display text will go here</p>
-          </div>
-          <form className="card-form" onSubmit={e => this.submitForm(e)}>
-            <input type="text" className="user-guess" name="user_guess" id="user_guess"/>
-            <button type="submit" className="answer-sub-btn">Guess!</button>
-          </form>
-        </section>
+        <button
+          onClick={()=>this.props.dispatch(fetchQuestion())}
+        >Start!</button>
       </main>
     );
   }
