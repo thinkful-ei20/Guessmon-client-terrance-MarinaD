@@ -7,7 +7,7 @@ class Scoring extends React.Component {
     let percentage;
     if (this.props.result !== null) {
       percentage = 'Your current percentage for this question is ';
-      percentage += this.props.correct / this.props.result * 100;
+      percentage += this.props.correct / this.props.total * 100;
       percentage +=  '%.';
     }
 
