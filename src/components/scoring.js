@@ -5,9 +5,13 @@ class Scoring extends React.Component {
   render() {
 
     let percentage;
-    if (this.props.result !== null) {
+    if (this.props.result === true) {
       percentage = 'Your current percentage for this question is ';
-      percentage += this.props.correct / this.props.total * 100;
+      percentage += Math.round((this.props.correct + 1) / (this.props.total + 1) * 100);
+      percentage +=  '%.';
+    } else if (this.props.result === false) {
+      percentage = 'Your current percentage for this question is ';
+      percentage += Math.round(this.props.correct / (this.props.total + 1) * 100);
       percentage +=  '%.';
     }
 
