@@ -3,10 +3,9 @@ import {reducer as formReducer} from 'redux-form';
 import thunk from 'redux-thunk';
 import {loadAuthToken} from './local-storage';
 import authReducer from './reducers/auth';
-import protectedDataReducer from './reducers/protected-data';
 import {setAuthToken, refreshAuthToken} from './actions/auth';
 import questionReducer from './reducers/questions';
-import { postAnswer } from './actions/questions';
+import aboutReducer from './reducers/about';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -14,8 +13,8 @@ const store = createStore(
   combineReducers({
     form: formReducer,
     auth: authReducer,
-    protectedData: protectedDataReducer,
-    data : questionReducer
+    data : questionReducer,
+    about : aboutReducer
   }),
   composeEnhancers(applyMiddleware(thunk))
 );
