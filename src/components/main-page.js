@@ -7,10 +7,7 @@ import QuestionCard from './question-card';
 class MainPage extends React.Component {
     
 
-  submitForm(e){
-    e.preventDefault();
-    const answer = (document.getElementById('user_guess').value);
-  }
+
 
   render() {
     // find a way to redirect to registration on logout    
