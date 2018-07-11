@@ -48,9 +48,7 @@ class QuestionCard extends React.Component {
       cardClass = 'card-fail';
     } else {
       cardClass = 'card-blank';
-    }
-
-   
+    } 
   
     return (
       <main>
