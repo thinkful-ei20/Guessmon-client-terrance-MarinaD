@@ -15,7 +15,7 @@ export function LandingPage(props) {
     about = 
     <div>
       <h2>The Pokemon Learning Game!</h2>
-      <p> Guess the pokemon's name based on the silluette.</p>
+      <p> Guess the pokemon name based on the silluette.</p>
       <button
         onClick={()=>props.dispatch(closeAbout())}
       >close</button>

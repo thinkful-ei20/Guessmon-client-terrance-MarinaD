@@ -33,15 +33,31 @@ class QuestionCard extends React.Component {
     }
 
     let nextBtn;
+    let name;
+    let imageSrc = this.props.question.silhouette;
     if (this.props.result !== null) {
       nextBtn = <button onClick={() => this.onGuess()}>Next</button>;
+      imageSrc = this.props.question.filledIn;
+      name = <p>{this.props.question.answer}</p>;
     }
 
+    let cardClass;
+    if (this.props.result === true){
+      cardClass = 'card-success';
+    } else if (this.props.result === false){
+      cardClass = 'card-fail';
+    } else {
+      cardClass = 'card-blank';
+    }
+
+   
+  
     return (
       <main>
         <section className="main-section">
-          <div className="card">
-            <img className="pokemon-img" src={this.props.question.silhouette} alt="An unknown pokemon!" />
+          <div className={cardClass}>
+            <img className="pokemon-img" src={imageSrc} alt="An unknown pokemon!" />
+            {name}
             <Scoring />
           </div>
           <div>
