@@ -1,13 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {fetchProtectedData} from '../actions/protected-data';
-import {postAnswer, fetchQuestion} from '../actions/questions';
+import {fetchQuestion} from '../actions/questions';
 import QuestionCard from './question-card';
+import requiresLogin from './requires-login';
 
 class MainPage extends React.Component {
-    
-
-
 
   render() {
     // find a way to redirect to registration on logout    
@@ -16,7 +13,7 @@ class MainPage extends React.Component {
     }
     
     if (this.props.error){
-      return <div>{this.props.error}</div>;
+      return <div>{this.props.error.error}</div>;
     }
 
     if (this.props.question.answer){
@@ -43,4 +40,4 @@ const mapStateToProps = state => {
   
 };
 
-export default connect(mapStateToProps)(MainPage);
+export default requiresLogin()(connect(mapStateToProps)(MainPage));
