@@ -27,6 +27,13 @@ export const answerError = error => {
   };
 };
 
+export const RESET_RESULT = 'RESET_RESULT';
+export const resetResult = () => {
+  return {
+    type: RESET_RESULT
+  };
+};
+
 export const postAnswer = (question, answer) => (dispatch, getState) => {
   const authToken = getState().auth.authToken;
   const userId = getState().auth.currentUser.id;
