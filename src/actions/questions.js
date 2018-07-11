@@ -64,7 +64,6 @@ export const fetchQuestion = () => (dispatch, getState) =>{
   dispatch(requestAnswer());
   const authToken = getState().auth.authToken;
   const userId = getState().auth.currentUser.id;
-  dispatch(requestAnswer());
   return fetch(`${API_BASE_URL}/questions/${userId}`, {
     method: 'GET',
     headers: {
@@ -76,6 +75,7 @@ export const fetchQuestion = () => (dispatch, getState) =>{
     .then(res => res.json())
     .then(result => dispatch(questionSuccess(result)))
     .catch(err => {
+      console.log(err);
       dispatch(answerError(err));
     });
 };
