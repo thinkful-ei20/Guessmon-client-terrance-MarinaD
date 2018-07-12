@@ -23,13 +23,14 @@ button:hover {
 }
 
 a {
-  color: #06AED5;
+  color: #fdfdfd;
+  text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
 
 a:hover,
 a:focus {
-  color: green;
+  color: #FE9000;
 }
 
 /* color scheme */
@@ -46,6 +47,10 @@ i {
   
   background-color: #8bbdf6;
   background-color: #bd2931;
+
+  background-color: #FE9000;
+  background-color: #F77F00;
+  background-color: #F4892A; 
 }
 
 i {
@@ -57,5 +62,35 @@ i {
   /* border: #bd2931 */
   /* border-radius: 5px */
   /* bgc: #fdfdfd */
-  /* color: */
+  /* color: #183973*/
 
+/* HIGHLIGHT -- cool btn effect */
+/* .highlight .button {
+  display: inline-block;
+  color: #fff;
+  background: darkred;
+  margin: 20px;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight .button:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -80px;
+  height: 100px;
+  width: 70px;
+  background: rgba(255, 255, 255, .7);
+  transform: rotate(20deg);
+}
+
+.highlight .button:hover:before {
+  left: 150px;
+  transition: all .5s;
+}
+.highlight {margin-bottom:100px;} */
