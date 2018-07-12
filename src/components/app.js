@@ -7,6 +7,7 @@ import LandingPage from './landing-page';
 import RegistrationPage from './registration-page';
 import {refreshAuthToken} from '../actions/auth';
 import MainPage from './main-page';
+import { MainFooter } from './footer';
 
 export class App extends React.Component {
   componentDidUpdate(prevProps) {
@@ -45,6 +46,7 @@ export class App extends React.Component {
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/register" component={RegistrationPage} />
         <Route exact path="/main-page" component={MainPage} />
+        <MainFooter />
       </div>
     );
   }

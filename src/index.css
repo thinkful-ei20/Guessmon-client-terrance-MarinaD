@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  line-height: 1.5;
 }
 
 button:hover {
@@ -23,31 +24,74 @@ button:hover {
 }
 
 a {
-  color: #06AED5;
+  color: #fdfdfd;
+  text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
 
 a:hover,
 a:focus {
-  color: green;
+  color: #FE9000;
 }
 
-.logo {
-  color: rgb(19, 111, 139);
-  margin: 0;
-  font-weight: 700;
-  text-transform: capitalize;
-  font-weight: 700;
-  text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
+/* color scheme */
+body {
+  background-color: #183973;
+  color: #ffcb05;
+  font-family: 'Roboto', 'sans-serif';
 }
+
+i {
+  background-color: #183973;
+  
+  background-color: #b4c5cd;
+  
+  background-color: #8bbdf6;
+  background-color: #bd2931;
+
+  background-color: #FE9000;
+  background-color: #F77F00;
+  background-color: #F4892A; 
+}
+
+i {
+  background-color: #4183cd;
+  background-color: #fdfdfd;
+}
+
+/* card colors */
+  /* border: #bd2931 */
+  /* border-radius: 5px */
+  /* bgc: #fdfdfd */
+  /* color: #183973*/
+
+/* HIGHLIGHT -- cool btn effect */
+/* .highlight .button {
+  display: inline-block;
+  color: #fff;
+  background: darkred;
+  margin: 20px;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight .button:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -80px;
+  height: 100px;
+  width: 70px;
+  background: rgba(255, 255, 255, .7);
+  transform: rotate(20deg);
+}
+
+.highlight .button:hover:before {
+  left: 150px;
+  transition: all .5s;
+}
+.highlight {margin-bottom:100px;} */

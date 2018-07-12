@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {clearAuth} from '../actions/auth';
 import {clearAuthToken} from '../local-storage';
+import './header-bar.css';
 
 export class HeaderBar extends React.Component {
   logOut() {
@@ -19,10 +20,13 @@ export class HeaderBar extends React.Component {
     }
 
     return (
-      <div className="header-bar">
-        <h1 className="logo">Guessmon</h1>
+      <header className="main-header">
+        <div>
+          <h1 className="logo">Guessmon</h1>
+          {/* enter pokeball here */}
+        </div>
         {logOutButton}
-      </div>
+      </header>
     );
   }
 }
