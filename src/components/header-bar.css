@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'pokemon-logo';
-  src: url('../img/pokemon-logo.ttf') format('truetype')
+  src: url('../assets/fonts/pokemon-logo.ttf') format('truetype')
 }
 
 .main-header {
