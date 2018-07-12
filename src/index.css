@@ -33,12 +33,29 @@ a:focus {
 }
 
 /* color scheme */
-* {
-  color: #183973;
-  color: #fdfdfd;
-  color: #b4c5cd;
-  color: #4183cd;
-  color: #8bbdf6;
-  color: #8bbdf6;
-  color: #bd2931;
+body {
+  background-color: #183973;
+  color: #ffcb05;
+  font-family: 'Roboto', 'sans-serif';
 }
+
+i {
+  background-color: #183973;
+  
+  background-color: #b4c5cd;
+  
+  background-color: #8bbdf6;
+  background-color: #bd2931;
+}
+
+i {
+  background-color: #4183cd;
+  background-color: #fdfdfd;
+}
+
+/* card colors */
+  /* border: #bd2931 */
+  /* border-radius: 5px */
+  /* bgc: #fdfdfd */
+  /* color: */
+
