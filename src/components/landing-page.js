@@ -13,11 +13,11 @@ export function LandingPage(props) {
   if (props.loggedIn) {
     return <Redirect to="/main-page" />;
   }
-  let about = <div></div>;
+  let about = <div ></div>;
   let buddySelect = <div></div>;
   if (props.aboutIsOpen) {
     about =
-      <div className="about-container">
+      <div aria-live="polite" className="about-container">
         <h2 className="about-title">The Pokemon Learning Game!</h2>
         <p className="about-text"> Guess the pokemon name based on the silluette.</p>
         <button className="close-btn btn-highlight"

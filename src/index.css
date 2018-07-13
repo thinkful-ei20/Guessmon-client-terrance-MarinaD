@@ -67,7 +67,8 @@ i {
 
 .btn-highlight {
   display: inline-block;
-  color: #fdfdfd;
+  color: #183973;
+  font-weight: 600;
   background: #FE9000;
   width: 70px;
   height: 24px;

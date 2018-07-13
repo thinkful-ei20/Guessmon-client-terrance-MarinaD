@@ -26,9 +26,14 @@ export class QuestionCard extends React.Component {
       
       form = <form 
         onSubmit={e=>this.submitForm(e)}
-        className="card-form">
+        className="card-form"
+        aria-live="polite">
         <p className="display-msg">{displayMsg}</p>
-        <input type="text" className="user-guess" name="user_guess" id="user_guess"/>
+        <fieldset>
+          <label htmlFor="user_guess" aria-label="user_guess">
+            <input type="text" className="user-guess" name="user_guess" id="user_guess"/>
+          </label>
+        </fieldset>
         <button type="submit" className="guess-btn btn-highlight">Guess!</button>
       </form>;
     }

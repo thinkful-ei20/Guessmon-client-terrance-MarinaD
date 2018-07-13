@@ -23,34 +23,42 @@ export class RegistrationForm extends React.Component {
         onSubmit={this.props.handleSubmit(values =>
           this.onSubmit(values)
         )}>
-        <label htmlFor="email">Email Address</label>
-        <Field component={Input} type="email" name="email" />
-        <label htmlFor="username">Username</label>
-        <Field
-          component={Input}
-          type="text"
-          name="username"
-          validate={[required, nonEmpty, isTrimmed]}
-        />
-        <label htmlFor="password">Password</label>
-        <Field
-          component={Input}
-          type="password"
-          name="password"
-          validate={[required, passwordLength, isTrimmed]}
-        />
-        <label htmlFor="passwordConfirm">Confirm Password</label>
-        <Field
-          component={Input}
-          type="password"
-          name="passwordConfirm"
-          validate={[required, nonEmpty, matchesPassword]}
-        />
+        <fieldset>
+          <Field
+            label='Email Address'
+            component={Input}
+            type="email"
+            name="email" />
+
+          <Field
+            label='Username'
+            component={Input}
+            type="text"
+            name="username"
+            validate={[required, nonEmpty, isTrimmed]}
+          />
+
+          <Field
+            label='Password'
+            component={Input}
+            type="password"
+            name="password"
+            validate={[required, passwordLength, isTrimmed]}
+          />
+
+          <Field
+            label='Password Again'
+            component={Input}
+            type="password"
+            name="passwordConfirm"
+            validate={[required, nonEmpty, matchesPassword]}
+          />
+        </fieldset>
         <button
           className="register-btn btn-highlight"
           type="submit"
           disabled={this.props.pristine || this.props.submitting}>
-                    Register
+          Register
         </button>
       </form>
     );

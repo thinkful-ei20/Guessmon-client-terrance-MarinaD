@@ -3,10 +3,15 @@
   margin-top: 1.5em;
 }
 
-.login-form label {
+.login-form .form-input label {
   font-size: 0.875em;
+  display: block;
 }
 
+.form-error {
+  color: #fdfdfd;
+  font-size: 0.875em;
+}
 .form-input > * {
   width: 16em;
 }
