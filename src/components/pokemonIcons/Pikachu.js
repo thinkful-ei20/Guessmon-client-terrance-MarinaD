@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Pikachu(props) {
   return (
-    <svg 0 version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 127.782 127.782" style={{{"enableBackground": '"new'}} 127.782 127.782;"} xmlSpace="preserve" width="127.782" height="127.782" {...props}>
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 127.782 127.782" style={{"enableBackground": '"new'}} xmlSpace="preserve" width="127.782" height="127.782" {...props}>
       <g>
         <g>
           <g>
