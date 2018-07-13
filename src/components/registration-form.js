@@ -23,7 +23,7 @@ export class RegistrationForm extends React.Component {
         onSubmit={this.props.handleSubmit(values =>
           this.onSubmit(values)
         )}>
-        <fieldset>
+        <fieldset className="register-fieldset">
           <Field
             label='Email Address'
             component={Input}

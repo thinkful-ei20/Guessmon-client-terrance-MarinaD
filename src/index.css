@@ -40,29 +40,19 @@ ul {
   margin: 0;
 }
 
+fieldset {
+  padding: 1em 0;
+}
+
+.guess-fieldset {
+  border: none;
+}
+
 /* color scheme */
 body {
   background-color: #183973;
   color: #ffcb05;
   font-family: 'Roboto', 'sans-serif';
-}
-
-i {
-  background-color: #183973;
-  
-  background-color: #b4c5cd;
-  
-  background-color: #8bbdf6;
-  background-color: #bd2931;
-
-  background-color: #FE9000;
-  background-color: #F77F00;
-  background-color: #F4892A; 
-}
-
-i {
-  background-color: #4183cd;
-  background-color: #fdfdfd;
 }
 
 .btn-highlight {
@@ -103,10 +93,6 @@ button:not(.pokemon-btn) {
 }
 
 @media (min-width: 20em) {
-  body {
-    background-color: red;
-  }
-
   .main-header {
     flex-direction: row;
     justify-content: space-between;
@@ -114,10 +100,6 @@ button:not(.pokemon-btn) {
 }
 
 @media (min-width: 32em) {
-  body {
-    background-color: green;
-  }
-
   .main-header {
     padding: 1.2em 6% 2em;
     min-height: 10em;
@@ -131,15 +113,22 @@ button:not(.pokemon-btn) {
     width: 46px;
     height: 46px;
   }
+
+  .home-section {
+    font-size: 1.4rem;
+    padding: 2em 6% 1em;
+  }
+
+  button:not(.pokemon-btn) {
+    width: 120px !important;
+    height: 30px !important;
+  }
 }
 
 @media (min-width: 44em) {
-  body {
-    background-color: pink;
-  }
-
   .main-header {
     padding: 1.8em 8% 2em;
+    margin-bottom: 4em;
   }
 
   .logo {
@@ -153,10 +142,6 @@ button:not(.pokemon-btn) {
 }
 
 @media (min-width: 56em) {
-  body {
-    background-color: tan;
-  }
-
   .main-header {
     padding: 1.8em 12% 2em;
   }
