@@ -42,10 +42,13 @@ class QuestionCard extends React.Component {
     }
 
     let cardClass;
+    let buddyMsg;
     if (this.props.result === true){
       cardClass = 'card-success';
+      buddyMsg = `Nice! You got it! ${this.props.buddy} is happy!`;
     } else if (this.props.result === false){
       cardClass = 'card-fail';
+      buddyMsg = `Uh oh, not quite. ${this.props.buddy} is sad...`;
     } else {
       cardClass = 'card-blank';
     } 
@@ -56,6 +59,7 @@ class QuestionCard extends React.Component {
           <div className={cardClass}>
             <img className="pokemon-img" src={imageSrc} alt="An unknown pokemon!" />
             {name}
+            {buddyMsg}
             <Scoring />
           </div>
           <div>
@@ -70,7 +74,8 @@ class QuestionCard extends React.Component {
 const mapStateToProps = state => {
   return {
     question: state.data.currentQuestion,
-    result: state.data.result
+    result: state.data.result,
+    buddy: state.buddy.pokemon
   };
 };
 

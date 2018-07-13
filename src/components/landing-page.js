@@ -1,9 +1,11 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {Link, Redirect} from 'react-router-dom';
+import { connect } from 'react-redux';
+import { Link, Redirect } from 'react-router-dom';
 
 import LoginForm from './login-form';
 import { openAbout, closeAbout } from '../actions/about';
+import { openBuddies } from '../actions/buddy';
+import BuddySelect from './buddySelect';
 
 export function LandingPage(props) {
   // If we are logged in redirect straight to the user's main-page
@@ -11,23 +13,38 @@ export function LandingPage(props) {
     return <Redirect to="/main-page" />;
   }
   let about = <div></div>;
-  if (props.isOpen){
-    about = 
-    <div>
-      <h2>The Pokemon Learning Game!</h2>
-      <p> Guess the pokemon name based on the silluette.</p>
-      <button
-        onClick={()=>props.dispatch(closeAbout())}
-      >close</button>
-    </div>;
+  let buddySelect = <div></div>;
+  if (props.aboutIsOpen) {
+    about =
+      <div>
+        <h2>The Pokemon Learning Game!</h2>
+        <p> Guess the pokemon name based on the silluette.</p>
+        <button
+          onClick={() => props.dispatch(closeAbout())}
+        >close</button>
+      </div>;
   }
+
+  if (props.buddyIsOpen) {
+    buddySelect = <BuddySelect />;
+  }
+
+
+
   return (
     <div className="home">
       <button
-        onClick={()=> props.dispatch(openAbout())}
+        onClick={() => props.dispatch(openBuddies())}
+      >
+        Pick Your Buddy for this Training Session</button>
+      {buddySelect}
+      <p>Your current buddy is <span>{props.buddy}</span></p>
+      <button
+        onClick={() => props.dispatch(openAbout())}
       >What is this?</button>
       {about}
       <LoginForm />
+
       <Link to="/register">Register</Link>
     </div>
   );
@@ -35,7 +52,9 @@ export function LandingPage(props) {
 
 const mapStateToProps = state => ({
   loggedIn: state.auth.currentUser !== null,
-  isOpen: state.about.isOpen
+  aboutIsOpen: state.about.isOpen,
+  buddyIsOpen: state.buddy.isOpen,
+  buddy: state.buddy.pokemon
 });
 
 export default connect(mapStateToProps)(LandingPage);

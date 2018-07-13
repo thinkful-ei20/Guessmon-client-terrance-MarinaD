@@ -6,6 +6,7 @@ import authReducer from './reducers/auth';
 import {setAuthToken, refreshAuthToken} from './actions/auth';
 import questionReducer from './reducers/questions';
 import aboutReducer from './reducers/about';
+import buddyReducer from './reducers/buddy';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -14,7 +15,8 @@ const store = createStore(
     form: formReducer,
     auth: authReducer,
     data : questionReducer,
-    about : aboutReducer
+    about : aboutReducer,
+    buddy : buddyReducer
   }),
   composeEnhancers(applyMiddleware(thunk))
 );
