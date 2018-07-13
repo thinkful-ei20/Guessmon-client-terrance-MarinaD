@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {fetchQuestion} from '../actions/questions';
 import QuestionCard from './question-card';
 import requiresLogin from './requires-login';
+import './main-page.css';
 
 export class MainPage extends React.Component {
 
@@ -22,9 +23,11 @@ export class MainPage extends React.Component {
 
     return (
       <main>
-        <button
-          onClick={()=>this.props.dispatch(fetchQuestion())}
-        >Start!</button>
+        <section className="home-section">
+          <button
+            className="btn-highlight start-btn" onClick={()=>this.props.dispatch(fetchQuestion())}
+          >Start!</button>
+        </section>
       </main>
     );
   }

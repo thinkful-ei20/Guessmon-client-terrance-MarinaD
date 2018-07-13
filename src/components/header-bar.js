@@ -23,20 +23,22 @@ export class HeaderBar extends React.Component {
     });
     if (this.props.loggedIn) {
       logOutButton = (
-        <button onClick={() => this.logOut()}>Log out</button>
+        <button id="logout-btn" className="logout-btn btn-highlight" onClick={() => this.logOut()}>Log out</button>
       );
-      username = <p>{this.props.user.username}</p>;
+      username = <p className="username">{this.props.user.username}</p>;
     }
 
     return (
       <header className="main-header">
-        <div>
+        <div className="logo-container">
           <h1 className="logo">Guessmon</h1>
           <Pokeball />
         </div>
-        {logOutButton}
-        {username}
-        {buddyIcon}
+        <div className="header-data">
+          {logOutButton}
+          {username}
+          {buddyIcon}
+        </div>
       </header>
     );
   }

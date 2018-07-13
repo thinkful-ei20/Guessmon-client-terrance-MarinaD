@@ -3,6 +3,8 @@ import { Field, reduxForm, focus } from 'redux-form';
 import Input from './input';
 import { login } from '../actions/auth';
 import { required, nonEmpty } from '../validators';
+import Pikachu from './pokemonIcons/Pikachu';
+import './login-form.css';
 
 export class LoginForm extends React.Component {
 
@@ -42,7 +44,7 @@ export class LoginForm extends React.Component {
           id="password"
           validate={[required, nonEmpty]}
         />
-        <button disabled={this.props.pristine || this.props.submitting}>
+        <button className="login-btn btn-highlight" disabled={this.props.pristine || this.props.submitting}>
                     Log in
         </button>
       </form>

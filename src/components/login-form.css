@@ -1,0 +1,21 @@
+
+.login-form {
+  margin-top: 1.5em;
+}
+
+.login-form label {
+  font-size: 0.875em;
+}
+
+.form-input > * {
+  width: 16em;
+}
+
+.form-input label {
+  font-size: 0.675em;
+}
+
+.login-btn {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}

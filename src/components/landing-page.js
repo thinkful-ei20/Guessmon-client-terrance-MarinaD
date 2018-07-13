@@ -6,6 +6,7 @@ import LoginForm from './login-form';
 import { openAbout, closeAbout } from '../actions/about';
 import { openBuddies } from '../actions/buddy';
 import BuddySelect from './buddySelect';
+import './landing-page.css';
 
 export function LandingPage(props) {
   // If we are logged in redirect straight to the user's main-page
@@ -16,10 +17,10 @@ export function LandingPage(props) {
   let buddySelect = <div></div>;
   if (props.aboutIsOpen) {
     about =
-      <div>
-        <h2>The Pokemon Learning Game!</h2>
-        <p> Guess the pokemon name based on the silluette.</p>
-        <button
+      <div className="about-container">
+        <h2 className="about-title">The Pokemon Learning Game!</h2>
+        <p className="about-text"> Guess the pokemon name based on the silluette.</p>
+        <button className="close-btn btn-highlight"
           onClick={() => props.dispatch(closeAbout())}
         >close</button>
       </div>;
@@ -32,21 +33,23 @@ export function LandingPage(props) {
 
 
   return (
-    <div className="home">
-      <button
-        onClick={() => props.dispatch(openBuddies())}
-      >
-        Pick Your Buddy for this Training Session</button>
-      {buddySelect}
-      <p>Your current buddy is <span>{props.buddy}</span></p>
-      <button
-        onClick={() => props.dispatch(openAbout())}
-      >What is this?</button>
-      {about}
-      <LoginForm />
+    <main>
+      <section className="home-section">
+        <button className=" about-btn btn-highlight"
+          onClick={() => props.dispatch(openAbout())}
+        >What is this?</button>
+        {about}
+        <button className="buddy-btn btn-highlight"
+          onClick={() => props.dispatch(openBuddies())}
+        >
+          Pick A Buddy</button>
+        {buddySelect}
+        <p className="buddy-text">Your current buddy is <span>{props.buddy}.</span></p>
+        <LoginForm />
 
-      <Link to="/register">Register</Link>
-    </div>
+        <Link to="/register"><button className="register-btn btn-highlight">Register</button></Link>
+      </section>
+    </main>
   );
 }
 

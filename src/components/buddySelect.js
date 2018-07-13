@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import pokemonArr from './pokemonIcons/pokemonArr';
+import './buddySelect.css';
 
 import { pickBuddy, closeBuddis } from '../actions/buddy';
 
@@ -9,7 +10,7 @@ export function BuddySelect(props){
   const listItems = pokemonArr.map((item, index) => {
     return (
       <li key={index}>
-        <button
+        <button className="pokemon-btn"
           onClick={()=> {
             props.dispatch(pickBuddy(item.value));
             props.dispatch(closeBuddis());
@@ -22,7 +23,7 @@ export function BuddySelect(props){
   });
 
   return (
-    <ul>
+    <ul className="pokemon-list">
       {listItems}
     </ul>
   );

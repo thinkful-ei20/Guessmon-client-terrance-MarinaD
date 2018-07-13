@@ -34,6 +34,12 @@ a:focus {
   color: #FE9000;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* color scheme */
 body {
   background-color: #183973;
@@ -59,27 +65,20 @@ i {
   background-color: #fdfdfd;
 }
 
-/* card colors */
-  /* border: #bd2931 */
-  /* border-radius: 5px */
-  /* bgc: #fdfdfd */
-  /* color: #183973*/
-
-/* HIGHLIGHT -- cool btn effect */
-/* .highlight .button {
+.btn-highlight {
   display: inline-block;
-  color: #fff;
-  background: darkred;
-  margin: 20px;
-  width: 130px;
-  height: 40px;
-  line-height: 40px;
+  color: #fdfdfd;
+  background: #FE9000;
+  width: 70px;
+  height: 24px;
+  line-height: 20px;
   border-radius: 10px;
+  border-color: #fdfdfd;
   position: relative;
   overflow: hidden;
 }
 
-.highlight .button:before {
+.btn-highlight:before {
   content: "";
   position: absolute;
   top: -30px;
@@ -90,8 +89,14 @@ i {
   transform: rotate(20deg);
 }
 
-.highlight .button:hover:before {
+.btn-highlight:hover:before {
   left: 150px;
   transition: all .5s;
 }
-.highlight {margin-bottom:100px;} */
+
+button:not(.pokemon-btn) {
+  width: 100px !important;
+  height: 25px !important;
+  border-radius: 0.4em !important;
+  font-size: 0.75em !important;
+}
