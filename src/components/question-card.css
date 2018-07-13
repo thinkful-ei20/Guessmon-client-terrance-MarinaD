@@ -1,0 +1,56 @@
+
+.main-section {
+  padding: 2em 4%;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.card {
+  max-width: 400px;
+  background-color: #fdfdfd;
+  color: #183973;
+  border: 2px solid #F77F00;
+  border-radius: 4px;
+  padding: 1em;
+  margin: 0 auto 1em;
+}
+
+.card-success {
+  background-color: #99C24D;
+}
+
+.card-fail {
+  background-color: #E86E66;
+}
+
+.card p {
+  margin: 0;
+}
+
+.pokemon-img {
+  max-width: 68%;
+  display: block;
+  margin: 0 auto;
+}
+
+.pokemon-name {
+  font-size: 1.5em;
+}
+
+.display-msg {
+  margin-bottom: 0;
+}
+
+.buddy-msg,
+.percentage {
+  font-size: 0.75em;
+}
+
+.guess-btn {
+  margin-left: 0.5em;
+}
+
+.next-btn {
+
+}
+
