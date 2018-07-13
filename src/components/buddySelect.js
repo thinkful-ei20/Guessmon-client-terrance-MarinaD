@@ -4,7 +4,7 @@ import pokemonArr from './pokemonIcons/pokemonArr';
 
 import { pickBuddy, closeBuddis } from '../actions/buddy';
 
-function BuddySelect(props){
+export function BuddySelect(props){
 
   const listItems = pokemonArr.map((item, index) => {
     return (

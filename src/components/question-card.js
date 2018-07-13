@@ -4,7 +4,7 @@ import { postAnswer } from '../actions/questions';
 import Scoring from './scoring.js';
 import { resetResult, fetchQuestion } from '../actions/questions';
 
-class QuestionCard extends React.Component {
+export class QuestionCard extends React.Component {
 
   submitForm(e){
     e.preventDefault();
