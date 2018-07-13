@@ -10,7 +10,7 @@ function BuddySelect(props){
   const listItems = pokemonArr.map((item, index) => {
     return (
       <li key={index}>
-        <button
+        <button className="pokemon-btn"
           onClick={()=> {
             props.dispatch(pickBuddy(item.value));
             props.dispatch(closeBuddis());

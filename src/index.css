@@ -94,39 +94,9 @@ i {
   transition: all .5s;
 }
 
-/* card colors */
-  /* border: #bd2931 */
-  /* border-radius: 5px */
-  /* bgc: #fdfdfd */
-  /* color: #183973*/
-
-/* HIGHLIGHT -- cool btn effect */
-/* .highlight .button {
-  display: inline-block;
-  color: #fff;
-  background: darkred;
-  margin: 20px;
-  width: 130px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
+button:not(.pokemon-btn) {
+  width: 100px !important;
+  height: 25px !important;
+  border-radius: 0.4em !important;
+  font-size: 0.75em !important;
 }
-
-.highlight .button:before {
-  content: "";
-  position: absolute;
-  top: -30px;
-  left: -80px;
-  height: 100px;
-  width: 70px;
-  background: rgba(255, 255, 255, .7);
-  transform: rotate(20deg);
-}
-
-.highlight .button:hover:before {
-  left: 150px;
-  transition: all .5s;
-}
-.highlight {margin-bottom:100px;} */
