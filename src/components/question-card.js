@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import { postAnswer } from '../actions/questions';
 import Scoring from './scoring.js';
 import { resetResult, fetchQuestion } from '../actions/questions';
+import './question-card.css';
 
 class QuestionCard extends React.Component {
 
@@ -26,9 +27,9 @@ class QuestionCard extends React.Component {
       form = <form 
         onSubmit={e=>this.submitForm(e)}
         className="card-form">
-        <p>{displayMsg}</p>
+        <p className="display-msg">{displayMsg}</p>
         <input type="text" className="user-guess" name="user_guess" id="user_guess"/>
-        <button type="submit" className="answer-sub-btn">Guess!</button>
+        <button type="submit" className="guess-btn btn-highlight">Guess!</button>
       </form>;
     }
 
@@ -36,21 +37,21 @@ class QuestionCard extends React.Component {
     let name;
     let imageSrc = this.props.question.silhouette;
     if (this.props.result !== null) {
-      nextBtn = <button onClick={() => this.onGuess()}>Next</button>;
+      nextBtn = <button className="next-btn btn-highlight" onClick={() => this.onGuess()}>Next</button>;
       imageSrc = this.props.question.filledIn;
-      name = <p>{this.props.question.answer}</p>;
+      name = <p className="pokemon-name">{this.props.question.answer}</p>;
     }
 
     let cardClass;
     let buddyMsg;
     if (this.props.result === true){
-      cardClass = 'card-success';
+      cardClass = 'card-success card';
       buddyMsg = `Nice! You got it! ${this.props.buddy} is happy!`;
     } else if (this.props.result === false){
-      cardClass = 'card-fail';
+      cardClass = 'card-fail card';
       buddyMsg = `Uh oh, not quite. ${this.props.buddy} is sad...`;
     } else {
-      cardClass = 'card-blank';
+      cardClass = 'card-blank card';
     } 
   
     return (
@@ -59,7 +60,7 @@ class QuestionCard extends React.Component {
           <div className={cardClass}>
             <img className="pokemon-img" src={imageSrc} alt="An unknown pokemon!" />
             {name}
-            {buddyMsg}
+            <p className="buddy-msg">{buddyMsg}</p>
             <Scoring />
           </div>
           <div>
