@@ -23,7 +23,7 @@ export class MainPage extends React.Component {
 
     return (
       <main>
-        <section className="home-section">
+        <section className="home-section" aria-live="polite">
           <button
             className="btn-highlight start-btn" onClick={()=>this.props.dispatch(fetchQuestion())}
           >Start!</button>

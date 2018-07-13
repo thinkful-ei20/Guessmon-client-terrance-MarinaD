@@ -23,7 +23,7 @@ export function BuddySelect(props){
   });
 
   return (
-    <ul className="pokemon-list">
+    <ul className="pokemon-list" aria-live="polite"> 
       {listItems}
     </ul>
   );
