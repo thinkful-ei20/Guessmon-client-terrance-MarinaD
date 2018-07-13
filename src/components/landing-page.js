@@ -47,7 +47,7 @@ export function LandingPage(props) {
         <p className="buddy-text">Your current buddy is <span>{props.buddy}.</span></p>
         <LoginForm />
 
-        <Link to="/register">Register</Link>
+        <Link to="/register"><button className="register-btn btn-highlight">Register</button></Link>
       </section>
     </main>
   );
