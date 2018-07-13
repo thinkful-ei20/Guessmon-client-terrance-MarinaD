@@ -2,11 +2,11 @@
 .main-section {
   padding: 2em 4%;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .card {
-  max-width: 400px;
+  max-width: 800px;
   background-color: #fdfdfd;
   color: #183973;
   border: 2px solid #F77F00;
