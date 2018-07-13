@@ -5,7 +5,7 @@ import QuestionCard from './question-card';
 import requiresLogin from './requires-login';
 import './main-page.css';
 
-class MainPage extends React.Component {
+export class MainPage extends React.Component {
 
   render() {
     // find a way to redirect to registration on logout    

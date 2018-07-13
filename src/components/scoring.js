@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-class Scoring extends React.Component {
+export class Scoring extends React.Component {
   render() {
 
     let percentage;

@@ -5,7 +5,7 @@ import './buddySelect.css';
 
 import { pickBuddy, closeBuddis } from '../actions/buddy';
 
-function BuddySelect(props){
+export function BuddySelect(props){
 
   const listItems = pokemonArr.map((item, index) => {
     return (
