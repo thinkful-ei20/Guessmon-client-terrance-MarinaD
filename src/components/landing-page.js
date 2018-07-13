@@ -6,6 +6,7 @@ import LoginForm from './login-form';
 import { openAbout, closeAbout } from '../actions/about';
 import { openBuddies } from '../actions/buddy';
 import BuddySelect from './buddySelect';
+import './landing-page.css';
 
 export function LandingPage(props) {
   // If we are logged in redirect straight to the user's main-page
@@ -32,21 +33,23 @@ export function LandingPage(props) {
 
 
   return (
-    <div className="home">
-      <button
-        onClick={() => props.dispatch(openBuddies())}
-      >
-        Pick Your Buddy for this Training Session</button>
-      {buddySelect}
-      <p>Your current buddy is <span>{props.buddy}</span></p>
-      <button
-        onClick={() => props.dispatch(openAbout())}
-      >What is this?</button>
-      {about}
-      <LoginForm />
+    <main>
+      <section className="home-section">
+        <button className="buddy-btn btn-highlight"
+          onClick={() => props.dispatch(openBuddies())}
+        >
+          Pick A Buddy</button>
+        {buddySelect}
+        <p>Your current buddy is <span>{props.buddy}</span></p>
+        <button
+          onClick={() => props.dispatch(openAbout())}
+        >What is this?</button>
+        {about}
+        <LoginForm />
 
-      <Link to="/register">Register</Link>
-    </div>
+        <Link to="/register">Register</Link>
+      </section>
+    </main>
   );
 }
 

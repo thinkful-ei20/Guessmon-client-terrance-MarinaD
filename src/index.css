@@ -34,6 +34,12 @@ a:focus {
   color: #FE9000;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* color scheme */
 body {
   background-color: #183973;
@@ -57,6 +63,35 @@ i {
 i {
   background-color: #4183cd;
   background-color: #fdfdfd;
+}
+
+.btn-highlight {
+  display: inline-block;
+  color: #fdfdfd;
+  background: #FE9000;
+  width: 70px;
+  height: 24px;
+  line-height: 20px;
+  border-radius: 10px;
+  border-color: #fdfdfd;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-highlight:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -80px;
+  height: 100px;
+  width: 70px;
+  background: rgba(255, 255, 255, .7);
+  transform: rotate(20deg);
+}
+
+.btn-highlight:hover:before {
+  left: 150px;
+  transition: all .5s;
 }
 
 /* card colors */

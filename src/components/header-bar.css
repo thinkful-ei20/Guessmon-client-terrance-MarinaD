@@ -50,43 +50,6 @@
   margin-bottom: 2em;
 }
 
-.logout-btn {
-  /* background-color: #bd2931;
-  background-color: #FE9000;
-  background-color: #F77F00;
-  background-color: #F4892A;  */
-  
-}
-
-.btn-highlight {
-  display: inline-block;
-  color: #fdfdfd;
-  background: #FE9000;
-  width: 70px;
-  height: 24px;
-  line-height: 20px;
-  border-radius: 10px;
-  border-color: #fdfdfd;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-highlight:before {
-  content: "";
-  position: absolute;
-  top: -30px;
-  left: -80px;
-  height: 100px;
-  width: 70px;
-  background: rgba(255, 255, 255, .7);
-  transform: rotate(20deg);
-}
-
-.btn-highlight:hover:before {
-  left: 150px;
-  transition: all .5s;
-}
-
 .username {
   margin: 1em 0 0;
   font-size: 0.875em;
