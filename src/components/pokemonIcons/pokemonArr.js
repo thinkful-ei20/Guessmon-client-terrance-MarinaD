@@ -21,75 +21,75 @@ import Weedle from './Weedle';
 
 const pokemonArr = [
   {
-    icon: <Pikachu />,
+    icon: <Pikachu className="pokemon-avatar"/>,
     value: 'Pikachu'
   },
   {
-    icon: <Abra />,
+    icon: <Abra className="pokemon-avatar"/>,
     value: 'Abra'
   },
   {
-    icon: <Bellsprout />,
+    icon: <Bellsprout className="pokemon-avatar"/>,
     value: 'Bellsprout'
   },
   {
-    icon: <Bullbasaur />,
+    icon: <Bullbasaur className="pokemon-avatar"/>,
     value: 'Bullbasaur'
   },
   {
-    icon: <Caterpie />,
+    icon: <Caterpie className="pokemon-avatar"/>,
     value: 'Caterpie'
   },
   {
-    icon: <Charmander />,
+    icon: <Charmander className="pokemon-avatar"/>,
     value: 'Charmander'
   },
   {
-    icon: <Dratini />,
+    icon: <Dratini className="pokemon-avatar"/>,
     value: 'Dratini'
   },
   {
-    icon: <Eevee />,
+    icon: <Eevee className="pokemon-avatar"/>,
     value: 'Eevee'
   },
   {
-    icon: <Jigglypuff />,
+    icon: <Jigglypuff className="pokemon-avatar"/>,
     value: 'Jigglypuff'
   },
   {
-    icon: <Mankey />,
+    icon: <Mankey className="pokemon-avatar"/>,
     value: 'Mankey'
   },
   {
-    icon: <Meowth />,
+    icon: <Meowth className="pokemon-avatar"/>,
     value: 'Meowth'
   },
   {
-    icon: <Psyduck />,
+    icon: <Psyduck className="pokemon-avatar"/>,
     value: 'Psyduck'
   },
   {
-    icon: <Rattata />,
+    icon: <Rattata className="pokemon-avatar"/>,
     value: 'Rattata'
   },
   {
-    icon: <Snorlax />,
+    icon: <Snorlax className="pokemon-avatar"/>,
     value: 'Snorlax'
   },
   {
-    icon: <Squirtle />,
+    icon: <Squirtle className="pokemon-avatar"/>,
     value: 'Squirtle'
   },
   {
-    icon: <Venonat />,
+    icon: <Venonat className="pokemon-avatar"/>,
     value: 'Venonat'
   },
   {
-    icon: <Weedle />,
+    icon: <Weedle className="pokemon-avatar"/>,
     value: 'Weedle'
   },
   {
-    icon: <Mew />,
+    icon: <Mew className="pokemon-avatar"/>,
     value: 'Mew'
   }
 ];
