@@ -93,16 +93,25 @@ button:not(.pokemon-btn) {
 }
 
 @media (min-width: 20em) {
-  .main-header {
-    flex-direction: row;
-    justify-content: space-between;
+  /* testing */
+  body {
+    background-color: pink;
   }
+
+  
 }
 
 @media (min-width: 32em) {
+  /* testing */
+  body {
+    background-color: tan;
+  }
+
   .main-header {
     padding: 1.2em 6% 2em;
     min-height: 10em;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .logo {
@@ -110,8 +119,8 @@ button:not(.pokemon-btn) {
   }
 
   .pokemon-avatar {
-    width: 52px;
-    height: 52px;
+    width: 62px;
+    height: 62px;
   }
 
   .home-section {
@@ -121,6 +130,11 @@ button:not(.pokemon-btn) {
 }
 
 @media (min-width: 44em) {
+  /* testing */
+  body {
+    background-color: lightblue;
+  }
+
   .main-header {
     font-size: 1.6rem;
     padding: 1.8em 8% 2em;
@@ -132,24 +146,36 @@ button:not(.pokemon-btn) {
     height: 36px !important;
   }
 
-  .logo {
-    font-size: 2.8em;
+  .pokeball-logo {
+    width: 36px;
+    height: 36px;
   }
 
   .pokemon-avatar {
-    width: 56px;
-    height: 56px;
+    width: 68px;
+    height: 68px;
   }
 }
 
 @media (min-width: 56em) {
+  /* testing */
+  body {
+    background-color: green;
+  }
+
   .main-header {
-    padding: 1.8em 12% 2em;
+    font-size: 2rem; 
+    padding: 1.8em 10% 2em;
+  }
+
+  .pokeball-logo {
+    width: 48px;
+    height: 48px;
   }
 
   .pokemon-avatar {
-    width: 72px;
-    height: 72px;
+    width: 80px;
+    height: 80px;
   }
 }
 
