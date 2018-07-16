@@ -1,25 +1,16 @@
 
-.home-section {
-  font-size: 1.8em !important;
-}
-
 .buddy-btn {
   margin-top: 3em;
 }
 
 .about-container {
-  font-size: 1rem;
   margin-bottom: 2em;
 }
 
-.buddy-btn,
+/* .buddy-btn,
 .about-btn {
   width: 100px !important;
   height: 25px !important;
   border-radius: 0.4em !important;
   font-size: 0.75em !important;
-}
-
-.buddy-text {
-  font-size: 0.7em;
-}
+} */

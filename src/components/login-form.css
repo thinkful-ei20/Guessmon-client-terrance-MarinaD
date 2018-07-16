@@ -8,22 +8,24 @@
   min-width: 100%;
 }
 
-.login-form .form-input label {
-  font-size: 0.875em;
-  display: block;
-  margin: 0 auto;
+.form-input label {
+  font-size: 1.4em;
+  max-width: 100%;
 }
 
 .form-error {
   color: #fdfdfd;
   font-size: 0.875em;
 }
+
 .form-input > * {
+  display: block;
   width: 16em;
 }
 
-.form-input label {
-  font-size: 0.675em;
+.form-input label,
+.form-input input {
+  margin: 0 auto;
 }
 
 .login-btn {
