@@ -85,7 +85,7 @@ body {
 }
 
 .btn-highlight:hover:before {
-  left: 150px;
+  left: 180px;
   transition: all .5s;
 }
 
@@ -98,9 +98,9 @@ body {
 
 @media (min-width: 32em) {
   /* testing */
-  body {
+  /* body {
     background-color: tan;
-  }
+  } */
 
   .main-header {
     padding: 1.2em 6% 2em;
@@ -130,9 +130,9 @@ body {
 
 @media (min-width: 44em) {
   /* testing */
-  body {
+  /* body {
     background-color: lightblue;
-  }
+  } */
 
   .main-header {
     font-size: 1.6rem;
@@ -141,8 +141,9 @@ body {
   }
 
   #logout-btn {
-    width: 120px !important;
-    height: 36px !important;
+    width: 135px !important;
+    /* changed height */
+    height: 48px !important;
   }
 
   .pokeball-logo {
@@ -158,9 +159,9 @@ body {
 
 @media (min-width: 56em) {
   /* testing */
-  body {
+  /* body {
     background-color: green;
-  }
+  } */
 
   .main-header {
     font-size: 2rem; 
