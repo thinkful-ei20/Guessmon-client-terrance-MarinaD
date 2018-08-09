@@ -60,8 +60,12 @@ body {
   color: #183973;
   font-weight: 600;
   background: #FE9000;
-  width: 70px;
+  /* width: 70px;
   height: 24px;
+  line-height: 20px; */
+  font-size: 1em;
+  width: 7em;
+  height: 36px;
   line-height: 20px;
   border-radius: 10px;
   border-color: #fdfdfd;
@@ -81,28 +85,28 @@ body {
 }
 
 .btn-highlight:hover:before {
-  left: 150px;
+  left: 180px;
   transition: all .5s;
 }
 
-button:not(.pokemon-btn) {
-  width: 100px !important;
+/* button:not(.pokemon-btn) {
+  width: 150px !important;
   height: 25px !important;
   border-radius: 0.4em !important;
   font-size: 0.75em !important;
-}
-
-@media (min-width: 20em) {
-  .main-header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
+} */
 
 @media (min-width: 32em) {
+  /* testing */
+  /* body {
+    background-color: tan;
+  } */
+
   .main-header {
     padding: 1.2em 6% 2em;
     min-height: 10em;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .logo {
@@ -110,8 +114,8 @@ button:not(.pokemon-btn) {
   }
 
   .pokemon-avatar {
-    width: 46px;
-    height: 46px;
+    width: 62px;
+    height: 62px;
   }
 
   .home-section {
@@ -119,36 +123,59 @@ button:not(.pokemon-btn) {
     padding: 2em 6% 1em;
   }
 
-  button:not(.pokemon-btn) {
-    width: 120px !important;
-    height: 30px !important;
+  .pokemon-list li {
+    flex-basis: 16.6666%;
   }
 }
 
 @media (min-width: 44em) {
+  /* testing */
+  /* body {
+    background-color: lightblue;
+  } */
+
   .main-header {
+    font-size: 1.6rem;
     padding: 1.8em 8% 2em;
     margin-bottom: 4em;
   }
 
-  .logo {
-    font-size: 2.8em;
+  #logout-btn {
+    width: 135px !important;
+    /* changed height */
+    height: 48px !important;
+  }
+
+  .pokeball-logo {
+    width: 36px;
+    height: 36px;
   }
 
   .pokemon-avatar {
-    width: 56px;
-    height: 56px;
+    width: 68px;
+    height: 68px;
   }
 }
 
 @media (min-width: 56em) {
+  /* testing */
+  /* body {
+    background-color: green;
+  } */
+
   .main-header {
-    padding: 1.8em 12% 2em;
+    font-size: 2rem; 
+    padding: 1.8em 10% 2em;
+  }
+
+  .pokeball-logo {
+    width: 48px;
+    height: 48px;
   }
 
   .pokemon-avatar {
-    width: 72px;
-    height: 72px;
+    width: 80px;
+    height: 80px;
   }
 }
 
