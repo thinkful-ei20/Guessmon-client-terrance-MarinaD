@@ -46,6 +46,17 @@ Guessmon was created with the following languages, libraries and frameworks:
 
 **Deployment** : [Heroku](https://www.herokud.com/)
 
+API Documentation
+------
+**/api/users**
+- POST '/' -> Requires 'username', 'password' and 'email' - returns the new user
+- POST '/login' -> Requires 'username' and 'password' - returns an authentication token
+- POST '/refresh' -> Requires valid token - returns a new token with later expiration date
+
+**/api/questions**
+- GET '/:userId' -> Requires Id of the user - returns the next question in their stack
+- POST '/:userId' -> Requires ID of user, original question and answer - returns a result object with true or false
+
 Code Tour
 ------
 ### Client  
