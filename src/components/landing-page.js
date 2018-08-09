@@ -5,6 +5,7 @@ import { Link, Redirect } from 'react-router-dom';
 import LoginForm from './login-form';
 import { openAbout, closeAbout } from '../actions/about';
 import { openBuddies } from '../actions/buddy';
+import { login } from '../actions/auth';
 import BuddySelect from './buddySelect';
 import './landing-page.css';
 
@@ -46,8 +47,10 @@ export function LandingPage(props) {
         {buddySelect}
         <p className="buddy-text">Your current buddy is <span>{props.buddy}.</span></p>
         <LoginForm />
-
         <Link to="/register"><button className="register-btn btn-highlight">Register</button></Link>
+        <p>Or log in with the <a onClick={() => props.dispatch(login('demouser', 'password10'))}>
+          demo </a> 
+         account.</p>
       </section>
     </main>
   );

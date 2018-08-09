@@ -19,3 +19,7 @@
 .buddy-text {
   font-size: 0.7em;
 }
+
+a:hover {
+  cursor: pointer;
+}
