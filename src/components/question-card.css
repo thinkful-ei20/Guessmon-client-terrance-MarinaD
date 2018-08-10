@@ -46,11 +46,32 @@
   font-size: 0.75em;
 }
 
-.guess-btn {
+/* .guess-btn {
   margin-left: 0.5em;
-}
+} */
 
 .next-btn,
 .guess-btn {
   width: 5em !important;
+}
+
+/* .guess-fieldset {
+  padding-top: 0;
+} */
+
+.user-guess {
+  padding: 0.4em 0.5em;
+  font-size: 1.7em;
+  max-width: 7.5em;
+  font-family: 'pokemon-logo', sans-serif;
+  letter-spacing: 1px;
+  color: #2759A5;
+  text-shadow: 0 1px 0 #2759A5,
+               0 2px 0 #ffcb05,
+               0 3px 0 #ffcb05,
+               0 4px 0 #ffcb05,
+               0 6px 1px rgba(255, 203, 5, .1),
+               0 0 5px rgba(255, 203, 5, .1),
+               0 1px 3px rgba(255, 203, 5, .3),
+               0 3px 5px rgba(255, 203, 5, .2)
 }

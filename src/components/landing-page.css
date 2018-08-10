@@ -16,7 +16,7 @@
 }
 
 .buddy-text {
-  font-size: 0.7em;
+  font-size: 0.875em;
 }
 
 a:hover {
@@ -29,5 +29,9 @@ a:hover {
     font-size: 1.5rem !important;
     min-width: 7em !important;
     height: 45px !important;
+  }
+
+  .buddy-text {
+    font-size: 1em;
   }
 }
