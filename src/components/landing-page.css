@@ -9,8 +9,8 @@
 
 .buddy-btn,
 .about-btn {
-  width: 100px !important;
-  height: 25px !important;
+  min-width: 8em !important;
+  height: 35px !important;
   border-radius: 0.4em !important;
   font-size: 0.75em !important;
 }
@@ -21,4 +21,13 @@
 
 a:hover {
   cursor: pointer;
+}
+
+@media (min-width: 44em) {
+  .buddy-btn,
+  .about-btn {
+    font-size: 1.5rem !important;
+    min-width: 7em !important;
+    height: 45px !important;
+  }
 }
