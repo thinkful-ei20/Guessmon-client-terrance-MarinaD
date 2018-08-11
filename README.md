@@ -9,7 +9,7 @@ Guessmon - A Pokemon Guessing Game
 
 Summary
 ------
-Welcome to Guessmon! Ever wanted to memorize pokemon but not able to keep them in your head? Guessmon is the solution! As you practice, the spaced-repittion learning algorithm will allow you to focus on those pokemon you have more trouble with- maximizing your efficiency!
+A recreation of the hit TV Pokémon mini-game, "Who's That Pokémon?", Guessmon brings that joy and nostalgia to the internet! As you practice, the spaced-repetition learning algorithm will allow you to focus on those pokemon you have more trouble with- maximizing your efficiency!
 
 In all users are able to:
 * **Create** a secure account
